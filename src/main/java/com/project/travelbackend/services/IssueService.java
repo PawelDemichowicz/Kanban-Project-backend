@@ -1,7 +1,6 @@
 package com.project.travelbackend.services;
 
 import com.project.travelbackend.domains.Issue;
-import com.project.travelbackend.domains.Project;
 import com.project.travelbackend.exceptions.IssueNotFoundException;
 import com.project.travelbackend.exceptions.ProjectNotFoundException;
 import com.project.travelbackend.repositories.IssueRepository;

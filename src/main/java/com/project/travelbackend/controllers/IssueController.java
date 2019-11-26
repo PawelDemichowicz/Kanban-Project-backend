@@ -1,6 +1,5 @@
 package com.project.travelbackend.controllers;
 
-import com.project.travelbackend.domains.Issue;
 import com.project.travelbackend.domains.IssueDto;
 import com.project.travelbackend.mappers.IssueMapper;
 import com.project.travelbackend.services.IssueService;

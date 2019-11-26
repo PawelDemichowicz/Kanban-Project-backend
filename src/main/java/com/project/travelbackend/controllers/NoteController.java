@@ -1,6 +1,5 @@
 package com.project.travelbackend.controllers;
 
-import com.project.travelbackend.domains.Note;
 import com.project.travelbackend.domains.NoteDto;
 import com.project.travelbackend.mappers.NoteMapper;
 import com.project.travelbackend.services.NoteService;

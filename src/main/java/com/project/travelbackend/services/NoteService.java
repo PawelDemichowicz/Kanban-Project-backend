@@ -1,6 +1,5 @@
 package com.project.travelbackend.services;
 
-import com.project.travelbackend.domains.Issue;
 import com.project.travelbackend.domains.Note;
 import com.project.travelbackend.exceptions.NoteNotFoundException;
 import com.project.travelbackend.repositories.NoteRepository;

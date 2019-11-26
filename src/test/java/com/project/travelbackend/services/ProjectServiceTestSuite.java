@@ -1,7 +1,5 @@
 package com.project.travelbackend.services;
 
-import com.project.travelbackend.domains.Issue;
-import com.project.travelbackend.domains.IssueType;
 import com.project.travelbackend.domains.Project;
 import com.project.travelbackend.repositories.ProjectRepository;
 import org.junit.Assert;
