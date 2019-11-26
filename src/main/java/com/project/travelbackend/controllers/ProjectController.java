@@ -16,28 +16,33 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 public class ProjectController {
 
     @Autowired
-    ProjectService serivce;
+    ProjectService service;
 
     @Autowired
     ProjectMapper mapper;
 
     @GetMapping(value = "/projects")
     public List<ProjectDto> getProjects(){
-        return mapper.mapToProjectDtoList(serivce.getProjects());
+        return mapper.mapToProjectDtoList(service.getProjects());
     }
 
     @GetMapping(value = "/project")
     public ProjectDto getProject(@RequestParam String title){
-        return mapper.mapToProjectDto(serivce.getProject(title));
+        return mapper.mapToProjectDto(service.getProject(title));
+    }
+
+    @GetMapping(value = "/project/daysLeft")
+    public String getDaysLeft(@RequestParam Long id){
+        return service.getDaysLeft(id);
     }
 
     @PostMapping(value = "/project", consumes = APPLICATION_JSON_VALUE)
     public void createProject(@RequestBody ProjectDto projectDto){
-        serivce.createProject(mapper.mapToProject(projectDto));
+        service.createProject(mapper.mapToProject(projectDto));
     }
 
     @DeleteMapping(value = "/project")
     public void deleteProject(@RequestParam Long id){
-        serivce.deleteProject(id);
+        service.deleteProject(id);
     }
 }

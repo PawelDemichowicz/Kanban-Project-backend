@@ -32,6 +32,11 @@ public class IssueController {
         return mapper.mapToIssueDto(service.getIssue(id));
     }
 
+    @GetMapping(value = "/issue/daysLeft")
+    public String getDaysLeft(@RequestParam Long id){
+        return service.getDaysLeft(id);
+    }
+
     @PostMapping(value = "/issue", consumes = APPLICATION_JSON_VALUE)
     public void createIssue(@RequestBody IssueDto issueDto){
         service.createIssue(mapper.mapToIssue(issueDto));
