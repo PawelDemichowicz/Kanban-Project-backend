@@ -13,4 +13,9 @@ public class UserDto {
     private String username;
     private String password;
     private boolean isAuthorized;
+    private String typeAccount;
+    private String emailAddress;
+    private String name;
+    private String surname;
+
 }

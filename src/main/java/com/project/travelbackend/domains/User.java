@@ -26,4 +26,16 @@ public class User {
 
     @Column(name = "isAuthorized")
     private boolean isAuthorized;
+
+    @Column(name = "typeAccount")
+    private String typeAccount;
+
+    @Column(name = "emailAddress")
+    private String emailAddress;
+
+    @Column(name = "name")
+    private String name;
+
+    @Column(name = "surname")
+    private String surname;
 }
